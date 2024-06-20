@@ -1,0 +1,125 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #032044;
+    color: white;
+    padding: 30px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('https://img1.10bestmedia.com/Images/Photos/409435/GettyImages-1265546294_55_660x440.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero input, .hero button {
+    padding: 10px;
+    font-size: 1em;
+}
+
+.destinations, .about, .contact, .testimonials, .booking {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.destinations-grid, .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.about {
+    background: url('https://cdn.pixabay.com/photo/2021/07/15/00/49/sunset-6467237_960_720.jpg') no-repeat center center/cover;
+    color: #fffcfc;
+    padding: 210px 0;
+}
+
+.contact {
+    background: url('https://a1.cdn.japantravel.com/photo/12865-215185/1440x960!/tokyo-tokyo-prefecture-215185.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 300px 0;
+}
+
+.testimonials {
+    background: url('https://w0.peakpx.com/wallpaper/314/281/HD-wallpaper-romantic-place-vacation-beach-bed-romantic-romance-ocean-beautiful-bed-sea-beach-maldives-graphy-summer.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 200px 0;
+}
+
+.booking {
+    background: url('https://images.healthshots.com/healthshots/en/uploads/2022/09/07225829/family-vacation.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 300px 0;
+}
+
+footer {
+    background-color: #021e35;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destinations-grid, .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
